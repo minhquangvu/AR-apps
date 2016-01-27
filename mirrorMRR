@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:ARPrototypingToolkit xmlns:ns1="ARProToXML"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="https:/vrac.iastate.edu/~rafael/xml/ARProTo.xsd">
+    <Statemachine file="../models/convex/mirror.py" />
+	
+	<Viewer window="true" x="5" y="5" width="1900" height="1080" display="0"/>
+	
+	<Models>
+		<ModelPhantom userID="teapot" label="teapotTest">
+            <Position X="-0.01" Y="-0.1" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_purple.osg"/>
+        </ModelPhantom>
+		<ModelPhantom userID="mirror" label="convex"> 
+			<Position X="-0.06" Y="0.01" Z="-0.005"/> <!-- Measured in meters -->
+			<Scale SX="0.01" SY="0.01" SZ="0.01"/>
+            <Orientation RX="1.57" RY="0" RZ="1.57"/> <!-- Measured in radians -->
+            <File name="../models/convex/mirrorHolder-Slide.osg"/>
+		</ModelPhantom>
+		<Model3D userID="pred01" label="teapot_orange">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_orange.osg"/>
+        </Model3D>
+		<Model3D userID="pred02" label="teapot_blue">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_blue.osg"/>
+        </Model3D>
+		<Model3D userID="pred03" label="teapot_green">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_green.osg"/>
+        </Model3D>
+		<Model3D userID="answer" label="teapot_green">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="0.0"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_red.osg"/>
+        </Model3D>
+		
+		
+		
+		<Content2D userID="step01text" label="step01text"> <!-- "Place the object and mirror in front of the camera." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step02text_a.png"/>
+        </Content2D>
+		<Content2D userID="step02text" label="step02text"> <!-- "Before we move on, keep in mind:" -->
+														 <!-- "HOW can we see the object in the first place?" -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step03text_a.png"/>
+        </Content2D>
+		<Content2D userID="step03text" label="step03text"> <!-- "Let's look at how light reflects on the mirror." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step04text_a.png"/>
+        </Content2D>
+		<Content2D userID="step04text" label="step04text"> <!-- "Now, put down the tablet. Look at the mirror." -->
+														 <!-- "WHERE is the IMAGE of the object located?" -->
+            <Position X="845" Y="900" Z="0.0"/>
+            <File name="../models/leif/step05text_a.png"/>
+        </Content2D>
+		<Content2D userID="step05text" label="step05text"> <!-- "... Are you discussing it with your partners?" -->
+            <Position X="845" Y="800" Z="0.0"/>
+            <File name="../models/leif/step06text_a.png"/>
+        </Content2D>
+		<Content2D userID="step06text" label="step06text"> <!-- "... Use what you know so far about how light moves." -->
+            <Position X="845" Y="620" Z="0.0"/>
+            <File name="../models/leif/step07text_a.png"/>
+        </Content2D>
+		<Content2D userID="step07text" label="step07text"> <!-- "... When you're ready, take the prediction marker and" -->
+														 <!-- "place it approximately where the image of the object is." -->
+            <Position X="840" Y="440" Z="0.0"/>
+            <File name="../models/leif/step08text_a.png"/>
+        </Content2D>
+		<Content2D userID="step08text" label="step08text"> <!-- "... Next, pick up the tablet to confirm your prediction. You'll have 3 trials" -->
+            <Position X="840" Y="300" Z="0.0"/>
+            <File name="../models/leif/step09text_a.png"/>
+        </Content2D>
+		<Content2D userID="step10text" label="step10text"> <!-- "... Click Test Predictions to see the result." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step09text_a.png"/>
+        </Content2D>
+		<Content2D userID="step09atext" label="step09atext"> <!-- "This is the current location of your predicted image." -->
+														 <!-- "Make any changes you like and store these as additional predictions." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step10atext_a.png"/>
+        </Content2D>
+		<Content2D userID="step10alabel" label="step10alabel"> <!-- "Prediction #1." -->"
+            <Position X="90" Y="620" Z="0.0"/>
+            <File name="../models/leif/step10alabel.png"/>
+        </Content2D>
+		<Content2D userID="step09btext" label="step09btext"> <!-- "These are the current locations of your predicted images." -->
+														 <!-- "Make any changes you like and store these as additional predictions." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step10btext_a.png"/>
+        </Content2D>
+		<Content2D userID="step09ctext" label="step09btext"> <!-- "These are the current locations of your predicted images." -->
+														 <!-- "Make any changes you like and store these as additional predictions." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step10ctext_a.png"/>
+        </Content2D>
+		<Content2D userID="step10blabel" label="step10blabel"> <!-- "Prediction #2." -->"
+            <Position X="90" Y="460" Z="0.0"/>
+            <File name="../models/leif/step10blabel.png"/>
+        </Content2D>
+		<Content2D userID="step10clabel" label="step10clabel"> <!-- "Prediction #3." -->"
+            <Position X="90" Y="300" Z="0.0"/>
+            <File name="../models/leif/step10clabel.png"/>
+        </Content2D>
+		<Content2D userID="step10dtext" label="step10dtext"> <!-- "These are the locations of your predicted images." -->
+														 <!-- "Move on to test your predictions." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/leif/step10dtext_a.png"/> 
+        </Content2D>
+		<Content2D userID="step11atext" label="step11atext"> <!--"Great job! Prediction 1 is the most accurate." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step11atext.png"/>
+        </Content2D>
+		<Content2D userID="step11btext" label="step11text"> <!-- "Great job! Prediction 2 is the most accurate." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step11btext.png"/>
+        </Content2D>
+		<Content2D userID="step11ctext" label="step11ctext"> <!-- "Great job! Prediction 3 is the most accurate." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step11ctext.png"/>
+        </Content2D>
+		<Content2D userID="step12text" label="step12text">  <!--"Task end." -->
+			<Position X="250" Y="880" Z="0.0"/>
+			<File name="../models/convex/step12text.png"/> 
+		</Content2D>
+		
+	</Models>
+	
+	
+	<ARToolKit camera_config="camera_config" threshold="100" scale ="1000">
+		<Pattern id="0" >
+			<File value="patt.mirror"/>
+			<Dimension value="80"/> <!-- The number of millimeters across for the actual marker. -->
+			<Model3D userID="mirror" />
+			<!--<Model3D userID="teapot_orange" />-->
+		</Pattern>
+		<Pattern id="1" >
+			<File value="patt.teapot"/>
+			<Dimension value="80"/> <!-- The number of millimeters across for the actual marker. -->
+			<Model3D userID="teapot" />
+		</Pattern>
+		<Pattern id="2" >
+			<File value="patt.pred"/>
+			<Dimension value="80"/>
+			<Model3D userID="pred01"/>
+			<Model3D userID="pred02"/>
+			<Model3D userID="pred03"/>
+		</Pattern>
+	</ARToolKit>
+
+	
+	<Menu>
+		<MenuButton id="Exit" parent="Exit" size_x="100" size_y="60" pos_x="1800" pos_y="45"  url="../models/convex/exit.png" toggle="false" submenu="menu00" />
+		
+		<MenuButton id="ReadyNext" parent="ReadyButton" size_x="120" size_y="80" pos_x="1800" pos_y="45"  url="../models/convex/nextgreen.png" toggle="false" submenu="menu01" />
+		
+		<MenuButton id="ReadyBack" parent="ReadyButton" size_x="120" size_y="80" pos_x="5" pos_y="45"  url="../models/convex/backred.png" toggle="false" submenu="menu02" />
+		<MenuButton id="ReadyNext" parent="ReadyButton" size_x="120" size_y="80" pos_x="1800" pos_y="45"  url="../models/convex/nextgreen.png" toggle="false" submenu="menu02" />
+		
+		<MenuButton id="savePredButton" parent="ReadyButton" size_x="80" size_y="80" pos_x="1830" pos_y="50"  url="../models/convex/ready.png" toggle="false" submenu="menu03" />
+		<MenuButton id="ReadyBack" parent="ReadyButton" size_x="120" size_y="80" pos_x="5" pos_y="45"  url="../models/convex/backred.png" toggle="false" submenu="menu03" />
+		
+		<MenuButton id="testPredsButton" parent="ReadyButton" size_x="191" size_y="80" pos_x="1700" pos_y="50"  url="../models/convex/testPredictions.png" toggle="false" submenu="menu04" />
+		<!--<MenuButton id="ReadyBack" parent="ReadyButton" size_x="100" size_y="60" pos_x="5" pos_y="45"  url="../models/convex/backred.png" toggle="false" submenu="menu04" />-->
+	</Menu>
+	
+	<Configurations startConfig="step01" >
+		<Configuration configID="step01" >
+			<Content userID="step01text" />
+			<Content userID="mirror" />
+			<Content userID ="teapot" />
+		</Configuration>
+		<Configuration configID="step02">
+			<Content userID="step02text"/>
+			<Content userID="mirror"/>
+			<Content userID ="teapot"/>
+		</Configuration>
+		<Configuration configID="step03"> 
+			<Content userID="step03text"/>
+			<Content userID="mirror"/>
+			<Content userID ="teapot"/>
+		</Configuration>
+		<Configuration configID="step04"> <!-- "Now, put down the tablet. Look at the mirror." --> <!-- "WHERE is the IMAGE of the object located?" -->
+			<Content userID = "step04text" /> 
+		</Configuration>
+		<Configuration configID="step05"> <!-- "... Are you discussing it with your partners?" -->
+			<Content userID= "step05text" />
+		</Configuration>
+		<Configuration configID="step06"> <!-- "... Use what you know so far about how light moves." -->
+			<Content userID= "step06text" />
+		</Configuration>
+		<Configuration configID="step07"> <!-- "... When you're ready, take the prediction marker and" --> <!-- "place it approximately where the image of the object is." -->
+			<Content userID= "step07text" />
+		</Configuration>
+		<Configuration configID="step08"> <!-- "... Next, pick up the tablet to confirm your prediction." -->
+			<Content userID= "step08text" />
+		</Configuration>
+		<Configuration configID="step09a" >
+			<Content userID="step09atext" />
+			<Content userID="step10alabel" />
+			<Content userID="pred01" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+			<!-- <Content userID="blueBox" /> -->
+		</Configuration>
+		<Configuration configID="step09b" >
+			<Content userID="step09btext" />
+			<Content userID="step10alabel" />
+			<Content userID="step10blabel" />
+			<Content userID="pred01" />
+			<Content userID="pred02" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+		<Configuration configID="step09c" >
+			<Content userID="step09ctext" />
+			<Content userID="step10alabel" />
+			<Content userID="step10blabel" />
+			<Content userID="step10clabel" />
+			<Content userID="pred01" />
+			<Content userID="pred02" />
+			<Content userID="pred03" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+		<Configuration configID="step10">
+			<Content userID ="step10text" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+		<Configuration configID="step11a">
+			<Content userID ="pred01"/> 
+			<Content userID ="step11atext" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+		<Configuration configID="step11b">
+			<Content userID= "pred02"/> 
+			<Content userID ="step11btext" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+		<Configuration configID="step11c">
+			<Content userID="pred03"/> 
+			<Content userID ="step11ctext" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+		<Configuration configID="step12">
+			<Content userID ="step12text" />
+			<Content userID="teapot" />
+			<Content userID="mirror" />
+		</Configuration>
+	</Configurations>
+	
+</ns1:ARPrototypingToolkit>
