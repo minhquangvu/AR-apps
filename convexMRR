@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:ARPrototypingToolkit xmlns:ns1="ARProToXML"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="https:/vrac.iastate.edu/~rafael/xml/ARProTo.xsd">
+    <Statemachine file="../models/convex/convex.py" />
+	
+	
+	<Viewer window="true" x="5" y="5" width="1900" height="1080" display="0"/>
+	
+	
+	<Models>
+		<ModelPhantom userID="teapot" label="teapotTest">
+            <Position X="-0.01" Y="-0.1" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_red.osg"/>
+        </ModelPhantom>
+		<ModelPhantom userID="mirror" label="convex"> 
+			<Position X="0.0" Y="0.055" Z="-0.005"/> <!-- Measured in meters -->
+			<Scale SX="0.01" SY="0.01" SZ="0.01"/>
+            <Orientation RX="1.57" RY="0" RZ="0"/> <!-- Measured in radians -->
+            <File name="../models/convex/mirrorHolder-Slide.osg"/>
+		</ModelPhantom>
+		<Model3D userID="pred01" label="teapot_orange">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_orange.osg"/>
+        </Model3D>
+		<Model3D userID="pred02" label="teapot_blue">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_blue.osg"/>
+        </Model3D>
+		<Model3D userID="pred03" label="teapot_green">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="3.14"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_green.osg"/>
+        </Model3D>
+		<Model3D userID="answer" label="teapot_green">
+            <Position X="0.0" Y="0" Z="0.0"/> <!-- Measured in meters -->
+			<Scale SX="0.001" SY="0.001" SZ="0.001"/>
+            <Orientation RX="0.0" RY="0" RZ="0.0"/> <!-- Measured in radians? -->
+            <File name="../models/convex/teapot_red.osg"/>
+        </Model3D>
+		
+		<Content2D userID="step01text" label="step01text"> <!-- "Replace flat mirror with convex mirror." -->
+			<Position X="250" Y="880" Z="0.0"/>
+			<File name="../models/convex/step01text.png"/> 
+		</Content2D>
+		<Content2D userID="step02text" label="step02text"> <!-- "Let's look at how light travels through convex mirror." -->
+			<Position X="250" Y="880" Z="0.0"/>
+			<File name="../models/convex/step02text.png"/>
+        </Content2D>
+		<Content2D userID="step03text" label="step03text"> <!-- "what does the convex mirror do to that light? Please discuss with your partners." -->
+			<Position X="850" Y="900" Z="0.0"/>
+			<File name="../models/convex/step03text.png"/>
+        </Content2D>
+		<Content2D userID="step04text" label="step04text"> <!-- "How does your answer in the previous question influence your prediction of the image in regard of size and location?" -->
+			<Position X="850" Y="720" Z="0.0"/>
+			<File name="../models/convex/step04text.png"/>
+        </Content2D>
+		<Content2D userID="step05text" label="step05text"> <!-- "When you're ready, take the marker Predict and place it where you think the image should be." -->
+			<Position X="850" Y="520" Z="0.0"/>
+			<File name="../models/convex/step05text.png"/>
+        </Content2D>
+		<Content2D userID="step06text" label="step06text"> <!-- "Now, pick up the tablet to see your prediction." -->
+			<Position X="850" Y="320" Z="0.0"/>
+			<File name="../models/convex/step06text.png"/>
+        </Content2D>
+		<Content2D userID="step07text" label="step07text"> <!-- "Move marker and slide bar to adjust location and size" -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step04text_a.png"/>
+        </Content2D>
+		<Content2D userID="step08text" label="step08text"> <!-- "This is the current location of your second prediction. Move marker and slide bar to adjust location and size." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step08text.png"/>
+        </Content2D>
+		<Content2D userID="step09text" label="step09text"> <!-- "This is the current location of your third prediction. Move marker and slide bar to adjust location and size." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step09text.png"/>
+        </Content2D>
+		<Content2D userID="step10text" label="step10text"> <!-- "Click Test Predictions to see the result." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step09text_a.png"/>
+        </Content2D>
+		<Content2D userID="step10alabel" label="step10alabel"> <!-- "Prediction #1." -->"
+            <Position X="90" Y="620" Z="0.0"/>
+            <File name="../models/convex/step10alabel.png"/>
+        </Content2D>
+		<Content2D userID="step10blabel" label="step10blabel"> <!-- "Prediction #2." -->"
+            <Position X="90" Y="460" Z="0.0"/>
+            <File name="../models/convex/step10blabel.png"/>
+        </Content2D>
+		<Content2D userID="step10clabel" label="step10clabel"> <!-- "Prediction #3." -->"
+            <Position X="90" Y="300" Z="0.0"/>
+            <File name="../models/convex/step10clabel.png"/>
+        </Content2D>
+		<Content2D userID="step11atext" label="step11atext"> <!--"Great job! Prediction 1 is the most accurate." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step11atext_a.png"/>
+        </Content2D>
+		<Content2D userID="step11btext" label="step11text"> <!-- "Great job! Prediction 2 is the most accurate." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step11btext_a.png"/>
+        </Content2D>
+		<Content2D userID="step11ctext" label="step11ctext"> <!-- "Great job! Prediction 3 is the most accurate." -->
+            <Position X="250" Y="880" Z="0.0"/>
+            <File name="../models/convex/step11ctext_a.png"/>
+        </Content2D>
+		<Content2D userID="step12text" label="step12text">  <!--"Task end." -->
+			<Position X="250" Y="880" Z="0.0"/>
+			<File name="../models/convex/step12text.png"/> 
+		</Content2D>
+		
+	</Models>
+	
+	
+	<ARToolKit camera_config="camera_config" threshold="120" scale ="1000">
+		<Pattern id="0" >
+			<File value="patt.convex"/>
+			<Dimension value="80"/> <!-- The number of millimeters across for the actual marker. -->
+			<Model3D userID="mirror" />
+			<!--<Model3D userID="teapot_orange" />-->
+		</Pattern>
+		<Pattern id="1" >
+			<File value="patt.teapot"/>
+			<Dimension value="80"/> <!-- The number of millimeters across for the actual marker. -->
+			<Model3D userID="teapot" />
+		</Pattern>
+		<Pattern id="2" >
+			<File value="patt.pred"/>
+			<Dimension value="80"/>
+			<Model3D userID="pred01"/>
+			<Model3D userID="pred02"/>
+			<Model3D userID="pred03"/>
+		</Pattern>
+	</ARToolKit>
+
+	
+	<Menu>
+		<MenuButton id="Exit" parent="Exit" size_x="100" size_y="60" pos_x="1800" pos_y="40"  url="../models/convex/exit.png" toggle="false" submenu="menu00" />
+		
+		<MenuButton id="ReadyNext" parent="ReadyButton" size_x="120" size_y="80" pos_x="1800" pos_y="45"  url="../models/convex/nextgreen.png" toggle="false" submenu="menu01" />
+		
+		<MenuButton id="ReadyBack" parent="ReadyButton" size_x="120" size_y="80" pos_x="5" pos_y="45"  url="../models/convex/backred.png" toggle="false" submenu="menu02" />
+		<MenuButton id="ReadyNext" parent="ReadyButton" size_x="120" size_y="80" pos_x="1800" pos_y="45"  url="../models/convex/nextgreen.png" toggle="false" submenu="menu02" />
+		
+		<MenuButton id="savePredButton" parent="ReadyButton" size_x="80" size_y="80" pos_x="1830" pos_y="50"  url="../models/convex/ready.png" toggle="false" submenu="menu03" />
+		<MenuButton id="ReadyBack" parent="ReadyButton" size_x="120" size_y="80" pos_x="5" pos_y="45"  url="../models/convex/backred.png" toggle="false" submenu="menu03" />
+		<MenuButton id="Increase" parent="SizeButton" size_x="150" size_y="120" pos_x="1800" pos_y="700"  url="../models/convex/plus.png" toggle="false" submenu="menu03" />
+		<MenuButton id="Decrease" parent="SizeButton" size_x="150" size_y="120" pos_x="1800" pos_y="550"  url="../models/convex/minus.png" toggle="false" submenu="menu03" />
+		
+		<MenuButton id="testPredsButton" parent="ReadyButton" size_x="191" size_y="80" pos_x="1700" pos_y="50"  url="../models/convex/testPredictions.png" toggle="false" submenu="menu04" />
+		<!--<MenuButton id="ReadyBack" parent="ReadyButton" size_x="120" size_y="80" pos_x="5" pos_y="45"  url="../models/convex/backred.png" toggle="false" submenu="menu04" />-->
+	</Menu>
+	
+	<Configurations startConfig="step01" >
+		<Configuration configID="step01" >
+			<Content userID="step01text" />
+			<Content userID="mirror" />
+			<Content userID ="teapot" />
+		</Configuration>
+		<Configuration configID="step02">
+			<Content userID="step02text"/>
+			<Content userID="mirror"/>
+			<Content userID ="teapot"/>
+		</Configuration>
+		<Configuration configID="step03"> <!-- "what does the convex mirror do to that light? Please discuss with your partners." -->
+			<Content userID="step03text"/>
+		</Configuration>
+		<Configuration configID="step04">
+			<Content userID = "step04text" />
+		</Configuration>
+		<Configuration configID="step05">
+			<Content userID= "step05text" />
+		</Configuration>
+		<Configuration configID="step06">
+			<Content userID= "step06text" />
+		</Configuration>
+		<Configuration configID="step07">
+			<Content userID= "step07text" />
+			<Content userID= "step10alabel" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+			<Content userID= "pred01" />
+		</Configuration>
+		<Configuration configID="step08">
+			<Content userID= "step08text" />
+			<Content userID= "step10blabel" />
+			<Content userID= "step10alabel" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+			<Content userID= "pred01" />
+			<Content userID= "pred02" />
+		</Configuration>
+		<Configuration configID="step09">
+			<Content userID= "step09text" />
+			<Content userID= "step10clabel" />
+			<Content userID= "step10alabel" />
+			<Content userID= "step10blabel" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+			<Content userID= "pred01" />
+			<Content userID= "pred02" />
+			<Content userID= "pred03" />
+		</Configuration>
+		<Configuration configID="step10">
+			<Content userID= "mirror" />
+			<Content userID ="mirror"/>
+			<Content userID= "teapot" />
+		</Configuration>
+		<Configuration configID="step11a">
+			<Content userID ="pred01"/> 
+			<Content userID ="step11atext" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+		</Configuration>
+		<Configuration configID="step11b">
+			<Content userID= "pred02"/> 
+			<Content userID ="step11btext" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+		</Configuration>
+		<Configuration configID="step11c">
+			<Content userID="pred03"/> 
+			<Content userID ="step11ctext" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+		</Configuration>
+		<Configuration configID="step12">
+			<Content userID ="step12text" />
+			<Content userID= "mirror" />
+			<Content userID= "teapot" />
+		</Configuration>
+	</Configurations>
+	
+</ns1:ARPrototypingToolkit>
